@@ -1,0 +1,23 @@
+The TicTacToe class represents the game itself. It has methods for initializing the game, printing the board, checking for available moves, checking for empty squares, counting empty squares, making a move, and checking for a winner.
+
+The print_board method prints the current state of the board to the console.
+
+The print_board_nums method prints the indices of the board, allowing players to know which number corresponds to which square. This is useful for guiding players on which input to provide.
+
+The available_moves method returns a list of indices of empty squares on the board.
+
+The empty_squares method checks if there are any empty squares left on the board.
+
+The num_empty_squares method returns the number of empty squares left on the board.
+
+The make_move method allows a player to make a move on the board. It checks if the selected square is empty and updates the board accordingly. If the move results in a win, it sets the current_winner attribute.
+
+The winner method checks if the latest move resulted in a win. It checks rows, columns, and diagonals to determine if there is a winner.
+
+The play function orchestrates the game. It alternates between the two players, allowing each player to make a move until either one wins or the game ends in a tie.
+
+The HumanPlayer class represents a human player. It prompts the user for input to make a move, ensuring that the input is valid (an integer between 0 and 8 corresponding to an empty square on the board).
+
+In the __main__ block, two instances of HumanPlayer are created for 'X' and 'O' players respectively. Then, a TicTacToe instance is created, and the play function is called to start the game.
+
+You can run this code to play a game of Tic-Tac-Toe in the console. Each player will take turns entering their moves until one player wins or the game ends in a tie.
